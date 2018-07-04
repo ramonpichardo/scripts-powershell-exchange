@@ -2,7 +2,7 @@
 Trouble accessing OWA? Make sure the following four (4) parameters are set in the user's Exchange mailbox account: Language, Date Format, Time Format, and Time Zone.
 #>
 
-$ADUsername = <AD username>
+$ADUsername = "<AD_username>"
 
 Set-MailboxRegionalConfiguration -Identity $ADUsername -Language en-us
 Set-MailboxRegionalConfiguration -Identity $ADUsername -DateFormat "M/d/yyyy"
